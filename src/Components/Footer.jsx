@@ -10,17 +10,17 @@ export default function Foter() {
                         Crater
                     </div>
                     <div className="lg:text-[28px] sm:text-[24px] text-[24px] flex items-center gap-8">
-                        <button className="hover:text-[#74ff94]">
+                        <button className="hover:text-[#56f6be]">
                             <Icon icon="bi:instagram" />
                         </button>
-                        <button className="hover:text-[#74ff94]">
+                        <button className="hover:text-[#56f6be]">
                             <Icon icon="bi:facebook" />
                         </button>
-                        <button className="hover:text-[#74ff94]">
+                        <button className="hover:text-[#56f6be]">
                             <Icon icon="bi:linkedin" />
                         </button>
 
-                        <button className="hover:text-[#74ff94]">
+                        <button className="hover:text-[#56f6be]">
                             <Icon icon="bi:whatsapp" />
                         </button>
 
