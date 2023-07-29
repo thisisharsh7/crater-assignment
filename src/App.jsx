@@ -9,7 +9,7 @@ import Footer from './Components/Footer'
 
 export default function App() {
   return (
-    <div>
+    <div className='max-w-[1530px] bg-[#0f1711] bg-[url("https://www.thecrater.co/static/media/background.e63d2419d9d71ce60cec.jpg")] bg-cover font-[Roboto]'>
       <Header />
       <Hero />
       <Platforms />
