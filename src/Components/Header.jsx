@@ -7,7 +7,7 @@ export default function Header() {
         getClk((clk === 'top-full') ? '-top-52' : 'top-full');
     }
     return (
-        <div className="bg-white md:bg-white/95 xl:px-20 lg:px-16 px-6 md:py-3 flex justify-between items-center text-[#0f1711] relative ">
+        <div className="bg-white xl:px-20 lg:px-16 md:px-10 px-6 md:py-3 flex justify-between items-center text-[#0f1711] relative ">
             <div className="flex flex-1 justify-between md:bg-transparent bg-white z-30 md:py-0 py-3">
                 <div className="lg:text-[26px] text-[23px] uppercase font-normal">
                     Crater

@@ -3,33 +3,33 @@ import { Icon } from "@iconify/react";
 
 export default function Foter() {
     return (
-        <div className="flex flex-col items-center px-20  py-8 gap-20 bg-[#323a3435] text-white">
-            <div className="flex  flex-col  flex-1 gap-4 items-center w-full">
-                <div className="flex items-center py-3 justify-between w-full border-b-[1px]">
-                    <div className="text-[26px] leading-[22px] uppercase font-normal cursor-pointer">
+        <div className="flex flex-col items-center xl:px-20 lg:px-16 md:px-10 px-6   py-8 gap-20 bg-[#323a3435] text-white">
+            <div className="flex  flex-col  flex-1 gap-7 items-center w-full">
+                <div className="flex sm:flex-row flex-col gap-7 items-center py-4 justify-between w-full border-b-[1px]">
+                    <div className="lg:text-[38px] sm:text-[30px] lg:leading-[38px] sm:leading-[30px] text-[28px] uppercase font-normal cursor-pointer">
                         Crater
                     </div>
-                    <div className="text-[22px] flex items-center gap-8">
-                        <button>
+                    <div className="lg:text-[28px] sm:text-[24px] text-[24px] flex items-center gap-8">
+                        <button className="hover:text-[#74ff94]">
                             <Icon icon="bi:instagram" />
                         </button>
-                        <button>
+                        <button className="hover:text-[#74ff94]">
                             <Icon icon="bi:facebook" />
                         </button>
-                        <button>
+                        <button className="hover:text-[#74ff94]">
                             <Icon icon="bi:linkedin" />
                         </button>
 
-                        <button>
+                        <button className="hover:text-[#74ff94]">
                             <Icon icon="bi:whatsapp" />
                         </button>
 
                     </div>
                 </div>
 
-                <div className="flex justify-between w-full text-[16px]">
+                <div className="flex justify-between w-full lg:text-[18px] md:text-[14px] sm:flex-row flex-col sm:gap-2 gap-16 sm:items-start items-center sm:text-left text-center">
 
-                    <ul className="w-72 flex flex-col gap-2">
+                    <ul className="xl:w-80 lg:w-72 sm:w-60 w-full flex flex-col gap-2">
                         <li>An AI-powered Business Manager for Creators & Freelancers.</li>
                         <li>Sports Inddex N Tech Private Limited</li>
                     </ul>
@@ -39,8 +39,8 @@ export default function Foter() {
                         <li>contact@thecrater.co</li>
                     </ul>
 
-                    <ul className="w-60  flex gap-1 items-start ">
-                        <li className="text-[24px]  "><Icon icon="mdi:map-marker-outline" /></li>
+                    <ul className="xl:w-72 lg:w-60 sm:w-52 w-full  flex sm:gap-1 sm:items-start sm:flex-row flex-col items-center">
+                        <li className="lg:text-[24px] sm:text-[20px] text-[28px]"><Icon icon="mdi:map-marker-outline" /></li>
                         <li>14/4, J Block , 3rd Avenue, Anna Nagar East, Chennai, Tamil Nadu, 600102</li>
                     </ul>
 
