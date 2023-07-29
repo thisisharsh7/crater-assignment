@@ -1,21 +1,32 @@
+import { Icon } from "@iconify/react";
+import { useState } from "react";
 
 export default function Header() {
+    const [clk, getClk] = useState('top-full');
+    const chkClk = () => {
+        getClk((clk === 'top-full') ? '-top-52' : 'top-full');
+    }
     return (
-        <div className="bg-[#fafafa] py-4 px-20 flex justify-between items-center text-[#0f1711]">
-            <div className="text-[26px] uppercase font-normal">
-                Crater
+        <div className="bg-white md:bg-white/95 xl:px-20 lg:px-16 px-6 md:py-3 flex justify-between items-center text-[#0f1711] relative ">
+            <div className="flex flex-1 justify-between md:bg-transparent bg-white z-30 md:py-0 py-3">
+                <div className="lg:text-[26px] text-[23px] uppercase font-normal">
+                    Crater
+                </div>
+                <div className="text-[28px]  md:hidden flex items-center" onClick={chkClk}>
+                    <Icon icon="ci:hamburger-lg" />
+                </div>
             </div>
-            <ul className="flex items-center text-[#0f1711b5] gap-10 text-[15px] font-semibold">
-                <li className="hover:text-[#0f1711] transition-all duration-200  ">
+            <ul className={`flex md:relative items-center text-[#0f1711b5] md:gap-10 gap-5 lg:text-[15px] md:top-0  absolute right-0 top-full transition-all druation-300  md:bg-transparent bg-white/95 md:flex-row flex-col md:m-0 m-3 mx-5 z-10 left-0 md:text-[12px] text-[11px] md:py-0 py-8  font-semibold ${clk}`}>
+                <li className="hover:text-[#0f1711] transition-all duration-700">
                     <a href="#how-we-work">HOW WE WORK</a>
                 </li>
                 <li className="hover:text-[#0f1711] transition-all duration-200  ">
-                    <a href="#why-us" >WHY US?</a>
+                    <a href="#why-crater" >WHY CRATER?</a>
                 </li>
                 <li className="hover:text-[#0f1711] transition-all duration-200  ">
-                    <a href="#faqs">FAQs</a>
+                    <a href="#faqs">FAQS</a>
                 </li>
-                <li className="hover:bg-[#0f1711] text-[#0f1711] hover:text-white transition-all cursor-pointer duration-500 py-1 px-3 h-full border-[#0f1711]  border-2 ">
+                <li className="hover:bg-[#0f1711] text-[#0f1711] hover:text-white transition-all cursor-pointer duration-500 py-1.5 tracking-wide px-2  border-[#0f1711]  border-2 ">
                     <a href="#get-early-access ">GET EARLY ACCESS</a>
                 </li>
             </ul>
