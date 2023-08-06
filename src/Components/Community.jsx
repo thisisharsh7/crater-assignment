@@ -5,10 +5,10 @@ import { Icon } from "@iconify/react";
 export default function Community() {
     const memberScroll = useRef()
     function scrollRight() {
-        memberScroll.current.scrollBy(50, 0)
+        memberScroll.current.scrollBy(400, 0)
     }
     function scrollLeft() {
-        memberScroll.current.scrollBy(-50, 0)
+        memberScroll.current.scrollBy(-450, 0)
     }
     return (
         <div className="flex text-white xl:px-20 lg:px-16 md:px-10 px-6  lg:py-20 md:py-16 py-12 lg:gap-20 gap-8 ">
@@ -18,7 +18,7 @@ export default function Community() {
                     <button onClick={scrollLeft} className="text-[24px]">
                         <Icon icon="ps:left" />
                     </button>
-                    <div className="grid lg:grid-cols-[repeat(4,minmax(450px,1fr))] sm:grid-cols-[repeat(4,minmax(400px,1fr))] grid-cols-[repeat(4,minmax(100%,1fr))] overflow-x-hidden scroll-smooth pb-6 sm:px-4 px-2 sm:gap-10 gap-4 grid-flow-col w-full" ref={memberScroll}>
+                    <div className="grid lg:grid-cols-[repeat(4,minmax(450px,1fr))] sm:grid-cols-[repeat(4,minmax(400px,1fr))] grid-cols-[repeat(4,minmax(100%,1fr))] overflow-x-scroll [&::-webkit-scrollbar]:hidden scroll-smooth pb-6 sm:px-4 px-2 sm:gap-10 gap-4 grid-flow-col w-full " ref={memberScroll}>
                         <Member detail={"I have been able to increase my Youtube views by more than 30% by using their Views Predictor."} name={"Mitansh"} work={"Youtuber"} avatar={"./mitansh.jpeg"} />
                         <Member detail={"Crater is the ultimate all-in-one solution. I can't imagine going back to managing everything manually."} name={"Chintan"} work={"Solo Entreprenur"} avatar={"./chintan.jpeg"} />
                         <Member detail={"I was skeptical at first, but after using Crater for just a few weeks, I'm completely sold. The AI-powered features are incredibly accurate and make my life so much easier."} name={"Manisha"} work={"Architect"} avatar={"./Manisha.jpeg"} />
